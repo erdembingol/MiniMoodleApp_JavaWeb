@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="MiniMoodleApp" transaction-type="RESOURCE_LOCAL">
+		<class>models.Course</class>
+		<class>models.CourseNote</class>
+		<class>models.File</class>
+		<class>models.FileUpload</class>
+		<class>models.Project</class>
+		<class>models.ProjectNote</class>
+		<class>models.Student</class>
+		<class>models.Teacher</class>
+		<class>models.User</class>
+		<class>models.Enrollment</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/MiniMoodleAppDB?useUnicode=true&amp;characterEncoding=utf8&amp;characterSetResults=utf8"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="Erdem_123"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+		</properties>
+	</persistence-unit>
+</persistence>
